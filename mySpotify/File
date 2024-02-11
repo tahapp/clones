@@ -1,0 +1,17 @@
+1. models are the bones of the views
+2. manager makes sure that user credentails are correct
+3. think of every possible viewcontroller that you can encounter
+4. if your code is targeting ios 13 and later set up root window in scene delegate if you set up root windows in both delegate and scene,
+   iphone will be slow. 
+I. appDelegate then WelcomeVc then AuthenticationVC
+
+5. sections[indexPath.section].option[indexPath.row] and not sections[indexPath.row].option[indexPath.row]
+6. when decoding json with nested objecs, the nested objects must match the name of swift nest objects properties
+7. snake_case keys in json can be match with swift camel_cases.
+8. you do not have to include all the required parameter in the requests, at least one is enough.
+9. sometimes a value can be optional even though the web aPI does not specify. you know this throught JSON catch block
+10. you may find race condintioning when decoding multiple models in a shared instance?
+11. when doing search, your search query may have spaces and other charactrers. url does not know how to handle them, similar to mac termianl uoy can't "cd some folder", so the
+    solution is to encode thiose spaces and character in a way that the url can indestand.
+12. sometimes two JSON response may look identical only a small portion is different, so instead of creating almost duplicate Models, you can assign the the properties with symmetric difference an optional
+13. viewmodels are for views and models are for controllers
